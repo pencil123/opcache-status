@@ -1,0 +1,106 @@
+<!DOCTYPE html>  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+  
+<head>  
+    <meta charset="utf-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>Home</title>  
+    <style>
+        body {
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin: 0;
+            padding: 0;}
+        #header{
+            padding-left: 10%;
+            height: 60px;
+        }
+        #desc li{
+            list-style: upper-roman;
+            float:left;
+            margin-left:35px;
+        }
+        #daohang{
+            width: 250px;
+            float: left;
+            clear:left;
+        }
+        #daohang li{
+            list-style: decimal;
+            font-size:120%;
+        }
+        #direct{
+            font-size: 50%;
+            border-style: dashed;
+            border-width: 2px;
+        }
+        .cmd{
+            margin:0px;
+            padding-left: 3px;
+        }
+        .desc{
+            margin:0px;
+            padding-left: 30px;
+            background-color: #eff0f1;
+        }
+        #iframeContent{
+            float:left;
+            width: 84%;
+            height: 700px;  
+        }
+    </style>  
+<body>
+
+<div id="header">
+<h3>PHP Opcache Status</h3>
+<ul id="desc">
+<li>内存使用情况</li>
+<li>缓存的keys  </li>
+<li>缓存命中率  </li>
+<li>重启        </li>
+<li>黑名单      </li>
+<li>检查文件变动</li>
+</ul>
+</div>
+
+
+<div id="daohang">
+<ul>
+<li><a href="/web1" target="iframeContent">web-4</a></li>
+<li><a href="/web2" target="iframeContent">web-5</a></li>
+<li><a href="/web3" target="iframeContent">web-10</a></li>
+</ul>
+
+<div id="direct">
+<p class="cmd">enable</p><p class="desc">开/关</p>
+<p class="cmd">enable_cli</p><p class="desc">开/关</p>
+<p class="cmd">use_cwd</p><p class="desc">缓存文件全路径</p>
+<p class="cmd">validate_timestamps</p><p class="desc">检查文件更新</p>
+<p class="cmd">inherited_hack</p><p class="desc">指令已失效</p>
+<p class="cmd">dups_fix</p><p class="desc">-----</p>
+<p class="cmd">revalidate_path</p><p class="desc">重用include_path</p>
+<p class="cmd">log_verbosity_level</p><p class="desc">日志级别</p>
+<p class="cmd">memory_consumption</p><p class="desc">内存配置</p>
+<p class="cmd">interned_strings_buffer</p><p class="desc">内存临时字符串内存</p>
+<p class="cmd">max_accelerated_files</p><p class="desc">最大缓存文件数</p>
+<p class="cmd">max_wasted_percentage</p><p class="desc">重启前，浪费内存最大百分比</p>
+<p class="cmd">consistency_checks</p><p class="desc">检查每个N请求的缓存校验和</p>
+<p class="cmd">force_restart_timeout</p><p class="desc">缓存没被访问，等待重启</p>
+<p class="cmd">revalidate_freq</p><p class="desc">检查文件更新的频率</p>
+<p class="cmd">preferred_memory_model</p><p class="desc">内存管理模块</p>
+<p class="cmd">blacklist_filename</p><p class="desc">黑名单</p>
+<p class="cmd">max_file_size</p><p class="desc">缓存的最大文件size</p>
+<p class="cmd">error_log</p><p class="desc">错误日志存储位置</p>
+<p class="cmd">protect_memory</p><p class="desc">内存保护</p>
+<p class="cmd">save_comments</p><p class="desc">代码注释</p>
+<p class="cmd">load_comments</p><p class="desc">代码注释</p>
+<p class="cmd">fast_shutdown</p><p class="desc">快速关闭</p>
+<p class="cmd">enable_file_override</p><p class="desc">文件信息缓存</p>
+<p class="cmd">optimization_level</p><p class="desc">优化级别</p>
+</div>
+
+</div>
+
+<iframe id="iframeContent" name="iframeContent" frameborder="0" src="http://opcache123.com"></iframe>
+
+</body>
+</html>
